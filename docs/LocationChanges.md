@@ -101,7 +101,7 @@ async Task StopListening()
 	if(!CrossGeolocator.Current.IsListening)
 		return;
 	
-  await CrossGeolocator.Current.StopListening);
+  await CrossGeolocator.Current.StopListeningAsync();
 
   CrossGeolocator.Current.PositionChanged -= PositionChanged;
   CrossGeolocator.Current.PositionError -= PositionError;
